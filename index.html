@@ -215,7 +215,7 @@
   .related-chip:hover { border-color: var(--border-mid); color: var(--text-100); }
 
   /* ── 카테고리 ── */
-  .cat-list { display: flex; flex-direction: column; gap: 2px; }
+  .cat-list { display: grid; grid-template-columns: 1fr 1fr; gap: 2px 8px; }
   .cat-item {
     display: flex;
     align-items: center;
@@ -578,6 +578,7 @@
     .content-grid { grid-template-columns: repeat(auto-fill, minmax(140px, 1fr)); gap: 10px; }
     .sf-grid { grid-template-columns: repeat(auto-fill, minmax(90px, 1fr)); gap: 8px; }
     .filters { gap: 5px; }
+    .cat-list { grid-template-columns: 1fr; }
     .sort-btn { margin-left: 0; }
     .related-chip { font-size: 12px; padding: 4px 10px; }
   }
@@ -658,7 +659,7 @@
     <div class="section">
       <div class="section-header">
         <span class="section-title">카테고리</span>
-        <span class="section-count">2</span>
+        <span class="section-count">6</span>
       </div>
       <div class="cat-list">
         <div class="cat-item">
@@ -673,6 +674,34 @@
           <div>
             <div class="cat-path">전문직무 › IT</div>
             <div class="cat-name"><b>데이터</b>·AI</div>
+          </div>
+        </div>
+        <div class="cat-item">
+          <div class="cat-icon">📁</div>
+          <div>
+            <div class="cat-path">공통/직무 › IT</div>
+            <div class="cat-name"><b>데이터</b> 사이언스</div>
+          </div>
+        </div>
+        <div class="cat-item">
+          <div class="cat-icon">📁</div>
+          <div>
+            <div class="cat-path">공통/직무 › 비즈니스 스킬</div>
+            <div class="cat-name"><b>데이터</b> 리터러시</div>
+          </div>
+        </div>
+        <div class="cat-item">
+          <div class="cat-icon">📁</div>
+          <div>
+            <div class="cat-path">리더십 › 의사결정</div>
+            <div class="cat-name"><b>데이터</b> 드리븐</div>
+          </div>
+        </div>
+        <div class="cat-item">
+          <div class="cat-icon">📁</div>
+          <div>
+            <div class="cat-path">사내과정</div>
+            <div class="cat-name"><b>데이터</b> 혁신</div>
           </div>
         </div>
       </div>
@@ -835,7 +864,6 @@
       <div class="section-header">
         <span class="section-title">게시글</span>
         <span class="section-count">317</span>
-        <span class="section-more">더보기 →</span>
       </div>
       <div class="post-list">
 
